@@ -30,6 +30,13 @@ class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func set(contact: Contact){
+        contactImageView.image=contact.image
+        contactName.text=contact.name
+    }
+    
+    
+    
     
     func configureImageView(){
         contactImageView.layer.cornerRadius = 10
